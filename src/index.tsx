@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { App } from './page/index';
 import reportWebVitals from './reportWebVitals';
+
+import 'rsuite/dist/styles/rsuite-dark.css';
 
 ReactDOM.render(
   <React.StrictMode>
