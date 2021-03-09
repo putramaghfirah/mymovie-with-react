@@ -23,7 +23,12 @@ export function PostList() {
     setSearch(value);
   }
 
-  function handleClick() {
+  // function handleClick() {
+  //   fetch(`http://www.omdbapi.com/?apikey=cca42522&s=${search}`)
+  //     .then((response) => response.json())
+  //     .then((data) => setMovies(data.Search));
+  // }
+  function handleEnter() {
     fetch(`http://www.omdbapi.com/?apikey=cca42522&s=${search}`)
       .then((response) => response.json())
       .then((data) => setMovies(data.Search));
@@ -32,10 +37,15 @@ export function PostList() {
     <React.Fragment>
       <Row>
         <InputGroup inside style={styles}>
-          <Input onChange={handleChange} placeholder="Search movies here..." />
-          <InputGroup.Button onClick={handleClick}>
+          <Input
+            onPressEnter={handleEnter}
+            onChange={handleChange}
+            placeholder="Search movies here..."
+          />
+          {/* <InputGroup.Button onClick={handleClick}> */}
+          <InputGroup.Addon>
             <Icon icon="search" />
-          </InputGroup.Button>
+          </InputGroup.Addon>
         </InputGroup>
       </Row>
       <Wrapper>
