@@ -5,7 +5,7 @@ import { Icon } from 'rsuite';
 
 export function Navbar() {
   return (
-    <Wrapper>
+    <Wrapper width="100vw">
       <Logo>Movies</Logo>
       <Item>
         <Link to="/">
@@ -44,10 +44,11 @@ export function Navbar() {
   );
 }
 
-const Wrapper = styled.nav`
-  width: 100vw;
+const Wrapper = styled.nav<{ width: string }>`
+  width: ${(p) => p.width};
   height: 3.5rem;
-  background-color: #1a1d24;
+  /* background-color: #1a1d24; */
+  background-color: ${(p) => p.theme.color};
   display: flex;
   align-items: center;
 `;
