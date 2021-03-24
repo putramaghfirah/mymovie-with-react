@@ -48,7 +48,7 @@ const Wrapper = styled.nav<{ width: string }>`
   width: ${(p) => p.width};
   height: 3.5rem;
   /* background-color: #1a1d24; */
-  background-color: ${(p) => p.theme.color};
+  background-color: ${(p) => p.theme.color.backgroundColor};
   display: flex;
   align-items: center;
 `;

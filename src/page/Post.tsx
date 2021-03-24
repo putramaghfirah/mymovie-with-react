@@ -60,16 +60,17 @@ const Image = styled.img`
 `;
 
 const Container = styled.div`
-  margin: 20px auto;
   display: flex;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 10px;
   overflow: auto;
   @media only screen and (min-width: 700px) {
     /* height: 400px; */
+    margin: 20px auto;
     width: 700px;
   }
   @media only screen and (max-width: 650px) {
+    margin: 20px;
     display: block;
     ${Image} {
       display: block;

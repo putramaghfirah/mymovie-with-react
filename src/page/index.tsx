@@ -13,7 +13,7 @@ export function App() {
         <Navbar />
         <Switch>
           <Route exact path="/" component={PostList} />
-          <Route exact path="/blog/:id" component={Post} />
+          <Route exact path="/login" component={Post} />
           <Route path="*" component={NotFound} />
         </Switch>
       </BrowserRouter>

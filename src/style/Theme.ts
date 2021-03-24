@@ -3,12 +3,12 @@ export const lightTheme = {
   fontColor: 'black',
 };
 export const blackTheme = {
-  backgroundColor: 'black',
+  backgroundColor: '#1a1d24',
   fontColor: 'white',
 };
 
 export const theme = {
-  color: '#1a1d24',
+  color: blackTheme,
   // toogleTheme() {
   //   this.color = blackTheme;
   // },

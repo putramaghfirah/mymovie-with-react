@@ -4,7 +4,7 @@ import { App } from './page/index';
 import reportWebVitals from './reportWebVitals';
 
 import 'rsuite/dist/styles/rsuite-dark.css';
-import { theme, Theme } from './style/Theme';
+import { theme } from './style/Theme';
 import { ThemeProvider } from 'styled-components';
 
 // export const ThemeContext = React.createContext<Theme>(theme);
